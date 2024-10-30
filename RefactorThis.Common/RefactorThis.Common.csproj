@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5310B2FE-E26D-414E-B656-1F74C5A70368}</ProjectGuid>
+    <ProjectGuid>{B475E2CA-2552-402E-8091-F1F92F5159A2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RefactorThis.Domain</RootNamespace>
-    <AssemblyName>RefactorThis.Domain</AssemblyName>
+    <RootNamespace>RefactorThis.Common</RootNamespace>
+    <AssemblyName>RefactorThis.Common</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,10 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Invoice.cs" />
-    <Compile Include="Entities\Payment.cs" />
+    <Compile Include="Enums\PaymentResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryInterfaces\IInvoiceRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
